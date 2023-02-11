@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <nav className="app__navbar">
       <div className='app__navbar-logo'>
-        <h2> Mohammed Raazy </h2>
+        <h2> Muhammad Razi </h2>
       </div>
       <ul className='app__navbar-links'>
          { lists.map(list => (
