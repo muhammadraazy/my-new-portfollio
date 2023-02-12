@@ -1,19 +1,16 @@
 import React from 'react'
-import { BsTwitter, BsInstagram } from "react-icons/bs"
-import { FaFacebookF } from "react-icons/fa"
+import { socialMedias } from './socialMedia'
 
 const SocialMedia = () => {
   return (
     <div className='app__social'>
-        <div>
-            <BsTwitter />
-        </div>
-        <div>
-            <BsInstagram />
-        </div>
-        <div>
-            <FaFacebookF />
-        </div>
+        { socialMedias.map(social => (
+          <div>
+              <a href={social.link} target="_blank" rel='noreferrer'>
+                <social.icon />
+              </a>
+          </div>
+        )) }
     </div>
   )
 }

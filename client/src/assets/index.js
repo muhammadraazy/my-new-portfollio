@@ -34,6 +34,11 @@ import spotify from "./spotify.png"
 import typescript from "./typescript.png"
 import vue from "./vue.png"
 
+import resume from "./Personal Resume ( Indonesian ).pdf"
+
+export const files = {
+    resume
+}
 
 export const images = {
     about01,
@@ -72,3 +77,4 @@ export const images = {
     typescript,
     vue
 }
+

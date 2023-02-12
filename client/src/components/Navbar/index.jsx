@@ -4,6 +4,7 @@ import { images } from "../../assets"
 import { lists } from "../../constants/constants"
 import { HiMenuAlt4, HiX } from "react-icons/hi"
 import { motion } from 'framer-motion'
+import DownloadButton from '../DownloadButton'
 
 const Navbar = () => {
    const [toggle, setToggle] = useState(false);
@@ -22,12 +23,14 @@ const Navbar = () => {
          )) }
       </ul>
 
+      <DownloadButton />
+
       <div className="app__navbar-menu">
           <HiMenuAlt4 onClick={() => setToggle(true)} />
 
           { toggle && (
              <motion.div
-               whileInView={{ x: [300, 0] }}
+               whileInView={{ x: [200, 0] }}
                transition={{ duration: 0.85, ease: "easeInOut" }}
              >
                 <HiX onClick={() => setToggle(false)} />
